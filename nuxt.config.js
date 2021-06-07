@@ -12,22 +12,22 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
+    ]
   },
 
-  router:{
-    //扩展路由
-    extendRoutes(routes,resolve){
+  router: {
+    // 扩展路由
+    extendRoutes (routes, resolve) {
       console.log(routes)
       routes.push({
         name: 'home',
         path: '/index',
-        component: resolve(__dirname,'pages/index.vue')
+        component: resolve(__dirname, 'pages/index.vue')
       })
     }
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
+  css: ['./assets/common.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
