@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'pjcp-font',
+    title: 'pjcp-front',
     htmlAttrs: {
       lang: 'en'
     },
@@ -17,7 +17,7 @@ export default {
 
   router: {
     // 扩展路由
-    extendRoutes (routes, resolve) {
+    extendRoutes(routes, resolve) {
       console.log(routes)
       routes.push({
         name: 'home',
